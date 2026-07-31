@@ -1,0 +1,73 @@
+{
+    "version": "LightGBM_v5_combined",
+    "training_date": "2026-07-30",
+    "features": [
+        "voltage",
+        "current",
+        "power",
+        "pf",
+        "frequency",
+        "relay",
+        "hour_sin",
+        "hour_cos",
+        "dow_sin",
+        "dow_cos",
+        "is_weekend",
+        "apparent_power",
+        "reactive_power",
+        "current_pf",
+        "power_per_voltage"
+    ],
+    "hyperparameters": "Default LightGBM",
+    "validation_strategy": "Stratified 80/20",
+    "macro_f1": 0.9489,
+    "weighted_f1": 0.9768,
+    "macro_precision": 0.9419,
+    "macro_recall": 0.9566,
+    "per_class_metrics": {
+        "AC": {
+            "precision": 0.9851,
+            "recall": 0.9838,
+            "f1": 0.9844
+        },
+        "Geyser": {
+            "precision": 0.8986,
+            "recall": 0.9036,
+            "f1": 0.9011
+        },
+        "Heater": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+        },
+        "LED": {
+            "precision": 0.8356,
+            "recall": 0.915,
+            "f1": 0.8735
+        },
+        "Refrigerator": {
+            "precision": 0.99,
+            "recall": 0.9808,
+            "f1": 0.9854
+        }
+    },
+    "train_time_sec": 6.0136,
+    "inference_time_sec": 0.3046,
+    "feature_importance": {
+        "voltage": 5025,
+        "reactive_power": 2031,
+        "current": 1580,
+        "pf": 1256,
+        "power": 1244,
+        "apparent_power": 820,
+        "power_per_voltage": 688,
+        "current_pf": 653,
+        "frequency": 455,
+        "hour_sin": 401,
+        "hour_cos": 331,
+        "dow_cos": 207,
+        "relay": 173,
+        "dow_sin": 119,
+        "is_weekend": 0
+    }
+}

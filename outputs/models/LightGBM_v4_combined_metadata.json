@@ -1,0 +1,37 @@
+{
+    "version": "LightGBM_v4_combined",
+    "training_date": "2026-07-13",
+    "features": [
+        "voltage",
+        "current",
+        "power",
+        "pf",
+        "frequency",
+        "relay",
+        "hour_sin",
+        "hour_cos",
+        "dow_sin",
+        "dow_cos",
+        "is_weekend",
+        "apparent_power",
+        "reactive_power",
+        "current_pf",
+        "power_per_voltage"
+    ],
+    "hyperparameters": "Default LightGBM",
+    "validation_strategy": "Stratified 80/20",
+    "macro_f1": 0.9708,
+    "macro_precision": 0.9633,
+    "macro_recall": 0.9793,
+    "per_class_recall": {
+        "AC": 0.9991,
+        "Geyser": 0.9945,
+        "LED": 0.94,
+        "Refrigerator": 0.9834
+    },
+    "train_time_sec": 4.7894,
+    "inference_time_sec": 0.1701,
+    "delta_f1_vs_baseline": 0.0323,
+    "decision": "KEEP",
+    "reason": "Delta F1 = +0.0323 vs baseline"
+}
